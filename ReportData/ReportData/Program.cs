@@ -10,6 +10,7 @@ namespace ReportData
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
