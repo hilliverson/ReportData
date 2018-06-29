@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BigFunction1.cs" />
+    <Compile Include="BigFunction2.cs" />
     <Compile Include="示範類別.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
