@@ -11,6 +11,7 @@ namespace ReportData
 {
     class 連線類別
     {
+
         private readonly string 連線字串 = string.Empty;
         private SqlConnection 物件連線 = new SqlConnection();
         private SqlCommand 資料庫命令 = new SqlCommand();
