@@ -46,6 +46,10 @@ namespace ReportData
         {
             物件連線.Close();
         }
+
+        
+
+
         public IDataReader 取得SQL集合(string 指令, params SqlParameter[] 參數)
         {
             SqlDataReader 資料集合 = null;

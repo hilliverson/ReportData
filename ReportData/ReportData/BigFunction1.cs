@@ -82,7 +82,7 @@ namespace ReportData
                 {
                     intPriWeek = intWeek;
                 }
-               
+
                 if (hTableQuery.ContainsKey("BU"))
                 {
                     strBu = hTableQuery["BU"].ToString().Trim();
@@ -96,7 +96,7 @@ namespace ReportData
                 {
                     strUserGroup = hTableQuery["USER_GROUP"].ToString();
                 }
-               
+
                 SqlParameter[] paras = new SqlParameter[6];
                 paras[0] = new SqlParameter("@START_DATE", SqlDbType.DateTime);
                 if (!string.IsNullOrEmpty(strStartDate))
@@ -185,7 +185,7 @@ namespace ReportData
                         }
                         //產品線
                         string strSqlCmd1 = "select PRODUCT_LINE from BD_BU_PRODUCTLINE where BU_NAME=@BU_NAME  ";
-                        
+
                         //Tech
                         if (!string.IsNullOrEmpty(strTech))
                         {
@@ -251,7 +251,7 @@ namespace ReportData
                             strTempSql += " and b.SEQ=@SEQ ";
                         }
 
-                        
+
                         //Tech
                         if (!string.IsNullOrEmpty(strTech))
                         {
@@ -284,7 +284,7 @@ namespace ReportData
                             strTempSql += " and b.SEQ=@SEQ ";
                         }
 
-                       
+
                         //Tech
                         if (!string.IsNullOrEmpty(strTech))
                         {
@@ -318,7 +318,7 @@ namespace ReportData
                             strTempSql += " and b.SEQ=@SEQ ";
                         }
 
-                       
+
                         //Tech
                         if (!string.IsNullOrEmpty(strTech))
                         {
@@ -452,7 +452,7 @@ namespace ReportData
                                 {
                                     strTempSql += " and b.SEQ=@SEQ ";
                                 }
-                                
+
                                 //Tech
                                 if (!string.IsNullOrEmpty(strTech))
                                 {
@@ -484,7 +484,7 @@ namespace ReportData
                                 {
                                     strTempSql += " and b.SEQ=@SEQ ";
                                 }
-                                
+
                                 //Tech
                                 if (!string.IsNullOrEmpty(strTech))
                                 {
@@ -519,7 +519,7 @@ namespace ReportData
                                 {
                                     strTempSql += " and b.SEQ=@SEQ ";
                                 }
-                                
+
                                 //Tech
                                 if (!string.IsNullOrEmpty(strTech))
                                 {
@@ -553,7 +553,7 @@ namespace ReportData
                                     strTempSql += " and b.SEQ=@SEQ ";
                                 }
 
-                                
+
                                 //Tech
                                 if (!string.IsNullOrEmpty(strTech))
                                 {
@@ -588,7 +588,7 @@ namespace ReportData
                                     strTempSql += " and b.SEQ=@SEQ ";
                                 }
 
-                                
+
                                 //Tech
                                 if (!string.IsNullOrEmpty(strTech))
                                 {
@@ -808,7 +808,7 @@ namespace ReportData
                             }
                             //產品線
                             string strSqlCmd1 = "select PRODUCT_LINE from BD_BU_PRODUCTLINE where BU_NAME=@BU_NAME  ";
-                           
+
                             //Tech
                             if (!string.IsNullOrEmpty(strTech))
                             {
@@ -841,7 +841,7 @@ namespace ReportData
                                 strTempSql += " and b.SEQ=@SEQ ";
                             }
 
-                           
+
                             //Tech
                             if (!string.IsNullOrEmpty(strTech))
                             {
@@ -876,7 +876,7 @@ namespace ReportData
                                 strTempSql += " and b.SEQ=@SEQ ";
                             }
 
-                            
+
                             //Tech
                             if (!string.IsNullOrEmpty(strTech))
                             {
@@ -910,7 +910,7 @@ namespace ReportData
                                 strTempSql += " and b.SEQ=@SEQ ";
                             }
 
-                            
+
                             //Tech
                             if (!string.IsNullOrEmpty(strTech))
                             {
@@ -920,7 +920,7 @@ namespace ReportData
                             if (!string.IsNullOrEmpty(strBu))
                             {
                                 strTempSql += " and  right(b.PRODUCT_LINE,len(b.PRODUCT_LINE)-charindex(',',b.PRODUCT_LINE)) in(" + strSqlCmd1 + ")";
-                               
+
                             }
 
                             //OutBound
@@ -1157,7 +1157,7 @@ namespace ReportData
                                     {
                                         strTempSql += " and b.SEQ=@SEQ ";
                                     }
-                                   
+
                                     //Tech
                                     if (!string.IsNullOrEmpty(strTech))
                                     {
@@ -1190,7 +1190,7 @@ namespace ReportData
                                         strTempSql += " and b.SEQ=@SEQ ";
                                     }
 
-                                  
+
                                     //Tech
                                     if (!string.IsNullOrEmpty(strTech))
                                     {
@@ -1224,7 +1224,7 @@ namespace ReportData
                                         strTempSql += " and b.SEQ=@SEQ ";
                                     }
 
-                                   
+
                                     //Tech
                                     if (!string.IsNullOrEmpty(strTech))
                                     {

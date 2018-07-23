@@ -10,7 +10,8 @@ namespace ReportData
     {
         static void Main(string[] args)
         {
-            
+            連線類別 連線 = new 連線類別();
+            連線.測試測試("test");
         }
     }
 }
